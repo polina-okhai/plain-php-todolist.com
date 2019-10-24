@@ -8,7 +8,15 @@ class Router
 
   public function call()
   {
-    echo $this->url;
+    switch ($this->url) {
+      case '/users':
+        (new UsersController)->index();
+        break;
+
+      default:
+        // code...
+        break;
+    }
   }
 }
 ?>
