@@ -1,5 +1,6 @@
 <?php
 include 'router.php';
+include 'database.php';
 include 'app/controllers/pages_controller.php';
 include 'app/controllers/registration_controller.php';
 include 'app/controllers/users_controller.php';
