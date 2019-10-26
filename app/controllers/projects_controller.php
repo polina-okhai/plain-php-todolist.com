@@ -6,5 +6,4 @@ class ProjectsController
     include_once('app/views/projects/index.php');
   }
 }
-
- ?>
+?>
