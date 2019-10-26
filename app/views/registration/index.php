@@ -7,6 +7,18 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Registration controller</h1>
+  <h1>Registration</h1>
+  <form action="/registrate" method="post">
+    <label for="email">E-mail</label>
+    <input type="email" name="email" value="">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" value="">
+    <br>
+    <label for="password_confirmation">Password Confirmation</label>
+    <input type="password" name="password_confirmation" value="">
+    <br>
+    <button type="submit">Registrate</button>
+  </form>
 </body>
 </html>

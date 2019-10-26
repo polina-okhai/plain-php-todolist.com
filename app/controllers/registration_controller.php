@@ -5,5 +5,10 @@ class RegistrationController
   {
     include_once('app/views/registration/index.php');
   }
+
+  public function registrate($post)
+  {
+    var_dump($post);
+  }
 }
 ?>

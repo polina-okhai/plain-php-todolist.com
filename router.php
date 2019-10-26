@@ -15,6 +15,9 @@ class Router
       case '/registration':
         (new RegistrationController)->index();
         break;
+      case '/registrate':
+        (new RegistrationController)->registrate($_POST);
+        break;
       case '/users':
         (new UsersController)->index();
         break;
