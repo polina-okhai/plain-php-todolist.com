@@ -10,12 +10,20 @@ class Router
   {
     switch ($this->url) {
       case '/users':
-        (new UsersController)->index();
-        break;
+      (new UsersController)->index();
+    break;
+
+      case '/prodjects':
+      (new ProjectsController)->index();
+    break;
+    
+      case '/tasks':
+      (new TasksController)->index();
+    break;
 
       default:
-        // code...
-        break;
+      // code...
+      break;
     }
   }
 }
