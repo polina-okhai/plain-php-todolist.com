@@ -11,5 +11,10 @@ class Database
     $this->connection = mysqli_connect(self::HOST, self::USER, self::PASSWORD, self::DATABASE) or
     die('Connection error: ' . mysql_error());
   }
+
+  public function query($sql)
+  {
+    mysqli_query($this->connection, $sql);
+  }
 }
 ?>
